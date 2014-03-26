@@ -28,21 +28,21 @@ int main() {
 void printProgramInfo() {
 	printf("PRI - Podstawy Programowania\n");
 	printf("Zadanie 1.6\n\n");
-	printf("Program oblicza wartość funkcji arctg(x) dla zadanej wartości x przy pomocy dwóch metod:\n");
-	printf("  - szeregu Taylora, dla n pierwszych wyrazów\n");
-	printf("  - funkcji bibliotecznej języka C - atan\n");
-	printf("Wynikiem programu jest obliczenie błędu bezwzględnego pierwszej z metod.\n\n");
+	printf("Program oblicza wartosc funkcji arctg(x) dla zadanej wartosci x przy pomocy dwóch metod:\n");
+	printf("  - szeregu Taylora, dla n pierwszych wyrazow\n");
+	printf("  - funkcji bibliotecznej jezyka C - atan\n");
+	printf("Wynikiem programu jest obliczenie bledu bezwzglednego pierwszej z metod.\n\n");
 }
 
 int getPrecision() {
-	printf("Podaj dokładność n (ilość wyrazów szeregu Taylora: ");
+	printf("Podaj dokladnosc n (ilosc wyrazow szeregu Taylora: ");
 	int precision;
 	scanf("%d", &precision);
 	return precision;
 }
 
 double getX() {
-	printf("Podaj wartość argumentu x: ");
+	printf("Podaj wartosc argumentu x: ");
 	double x;
 	scanf("%lf", &x);
 	return x;
@@ -65,5 +65,5 @@ void printResults(double arctgTaylor, double arctgCLibrary, double absoluteError
 	printf("\nObliczone wartości:\n");
 	printf("  - przy pomocy szeregu Taylora: %le\n", arctgTaylor);
 	printf("  - przy pomocy funkcji bibliotecznej: %le\n", arctgCLibrary);
-	printf("  - błąd bezwzględny [%%]: %le\n", absoluteError);
+	printf("  - blad bezwzgledny [%%]: %le\n", absoluteError);
 }
